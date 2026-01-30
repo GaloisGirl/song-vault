@@ -9,7 +9,7 @@ title: Anna's song vault.
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {% for era in eras %}
       <a
-        href="/era/{{ era.slug }}/"
+        href="{{ ('/era/' + era.slug + '/') | url }}"
         aria-label="{{ era.name }}"
         class="group block rounded-xl overflow-hidden bg-white border border-gray-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
       >
@@ -17,7 +17,7 @@ title: Anna's song vault.
           <div class="absolute inset-0 flex flex-col">
             <div class="flex-1 bg-gray-100 overflow-hidden">
               <img
-                src="/eras/{{ era.slug }}/{{ era.slug }}.png"
+                src="{{ ('/eras/' + era.slug + '/' + era.slug + '.png') | url }}"
                 alt="{{ era.name }}"
                 class="w-full h-full object-cover"
                 loading="lazy"
