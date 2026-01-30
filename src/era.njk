@@ -1,0 +1,16 @@
+---
+layout: base.njk
+pagination:
+  data: eras
+  size: 1
+  alias: era
+permalink: "era/{{ era.slug }}/index.html"
+title: "{{ era.name }}"
+---
+
+<div class="max-w-4xl mx-auto">
+  <h2 class="text-4xl font-bold text-gray-800 mb-4">{{ era.name }}</h2>
+  <p class="text-gray-600 mb-8">Era page.</p>
+
+  <a href="/" class="text-blue-700 underline">Back to eras</a>
+</div>
