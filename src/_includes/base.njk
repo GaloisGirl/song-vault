@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title or "Anna's song vault." }}</title>
+  <title>{{ title or "Anna's song vault" }}</title>
   <link rel="stylesheet" href="{{ '/css/output.css' | url }}">
 </head>
-<body class="flex flex-col min-h-screen bg-gray-50">
+<body class="flex flex-col min-h-screen bg-gray-300">
   <!-- Header -->
-  <header class="bg-blue-600 text-white shadow-lg">
+  <header class="text-gray-900 shadow-lg">
     <div class="container mx-auto px-4 py-6">
       <h1 class="text-3xl font-bold">
-        <a href="{{ '/' | url }}">Anna's song vault.</a>
+        <a href="{{ '/' | url }}" class="inline-flex items-center gap-3">
+          <img src="{{ '/img/vault.png' | url }}" alt="Vault" class="w-8 h-8">
+          <span>Anna's song vault</span>
+        </a>
       </h1>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow container mx-auto px-4 py-8">
+  <main class="flex-grow container   mx-auto px-4 py-8">
     {{ content | safe }}
   </main>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-gray-300 mt-auto">
     <div class="container mx-auto px-4 py-6">
-      <p class="text-center">© 2026 Anna Kosieradzka</p>
+      <p class="text-left">© 2026 Anna Kosieradzka</p>
     </div>
   </footer>
 </body>

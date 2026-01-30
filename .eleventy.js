@@ -3,7 +3,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/output.css");
   // Copy era images to output directory
   eleventyConfig.addPassthroughCopy({ "src/_data/eras": "eras" });
-  
+  // Copy site images (vault icon, etc.)
+  eleventyConfig.addPassthroughCopy("src/img");
+
   return {
     dir: {
       input: "src",
