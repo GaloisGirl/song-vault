@@ -11,7 +11,7 @@
     "watch:11ty": "npx eleventy --serve",
     "start:npm": "npm run build:css && npm run watch:11ty",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:npm",
+    "build": "eleventy",
     "start": "eleventy --serve"
   },
   "keywords": [],
