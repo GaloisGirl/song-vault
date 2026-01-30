@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title or "Anna's song vault." }}</title>
-  <link rel="stylesheet" href="/css/output.css">
+  <link rel="stylesheet" href="{{ '/css/output.css' | url }}">
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50">
   <!-- Header -->
   <header class="bg-blue-600 text-white shadow-lg">
     <div class="container mx-auto px-4 py-6">
       <h1 class="text-3xl font-bold">
-        <a href="/">Anna's song vault.</a>
+        <a href="{{ '/' | url }}">Anna's song vault.</a>
       </h1>
     </div>
   </header>
