@@ -114,4 +114,4 @@ title: Your Page Title
 
 ## License
 
-ISC
+ISC.
