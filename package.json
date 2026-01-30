@@ -1,0 +1,25 @@
+{
+  "name": "song-vault",
+  "version": "1.0.0",
+  "description": "A static website for organizing and displaying songs, built with 11ty and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i src/css/input.css -o src/css/output.css",
+    "build:11ty": "npx eleventy",
+    "build": "npm run build:css && npm run build:11ty",
+    "watch:css": "npx tailwindcss -i src/css/input.css -o src/css/output.css --watch",
+    "watch:11ty": "npx eleventy --serve",
+    "start": "npm run build:css && npm run watch:11ty",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.19"
+  }
+}
