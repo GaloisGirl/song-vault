@@ -41,6 +41,22 @@ jobs:
       - name: Build site
         run: npm run build
       
+      - name: Verify CSS output
+        run: |
+          echo "Checking for CSS output file..."
+          ls -lh src/css/output.css
+      
+      - name: Verify _site directory contents
+        run: |
+          echo "Contents of _site directory:"
+          ls -la _site/
+          echo ""
+          echo "HTML files in _site:"
+          find _site -name "*.html" -type f
+          echo ""
+          echo "CSS files in _site:"
+          find _site -name "*.css" -type f
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
