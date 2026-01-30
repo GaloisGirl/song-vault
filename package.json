@@ -6,13 +6,11 @@
   "scripts": {
     "build:css": "npx tailwindcss -i src/css/input.css -o src/css/output.css",
     "build:11ty": "npx eleventy",
-    "build:npm": "npm run build:css && npm run build:11ty",
+    "build": "npm run build:css && npm run build:11ty",
     "watch:css": "npx tailwindcss -i src/css/input.css -o src/css/output.css --watch",
     "watch:11ty": "npx eleventy --serve",
-    "start:npm": "npm run build:css && npm run watch:11ty",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "npm run build:css && npm run watch:11ty",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
