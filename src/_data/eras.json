@@ -2,11 +2,13 @@
     {
         "name": "Uneven and odd",
         "slug": "uneven-and-odd",
-        "description": "My newer songs"
+        "description": "My newer songs",
+        "image": "/img/uneven-and-odd.png"
     },
     {
         "name": "A fraction of me is irrational",
         "slug": "a-fraction-of-me-is-irrational",
-        "description": "Some of my earlier stuff"
+        "description": "Some of my earlier stuff",
+        "image": "/img/a-fraction-of-me-is-irrational.png"
     }
 ]
