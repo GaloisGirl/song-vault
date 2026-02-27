@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Roboto Condensed"', 'sans-serif'],
+      },
       backgroundImage: {
         'stone-pattern': "url('/img/stone.png')",
         'metal-pattern': "url('/img/metal.png')",
