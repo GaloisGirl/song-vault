@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,njk,md,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'stone-pattern': "url('/img/stone.png')",
+        'metal-pattern': "url('/img/metal.png')",
+      }
+    },
   },
   plugins: [],
 }
