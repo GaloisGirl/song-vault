@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World - Song Vault</title>
+    <title>Anna&#39;s Song Vault</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
@@ -12,7 +12,7 @@
         <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
             <a href="/" class="flex items-center space-x-3 text-gray-900 transition-opacity hover:opacity-80">
                 <img src="/img/vault.png" alt="Vault Logo" class="h-12 w-auto object-contain">
-                <span class="text-2xl font-bold tracking-wide">Song Vault</span>
+                <span class="text-2xl font-bold tracking-wide">Anna's Song Vault</span>
             </a>
         </div>
     </header>
@@ -20,17 +20,24 @@
     <!-- Main Content -->
     <main class="flex-grow max-w-4xl mx-auto px-4 py-8 w-full">
         
-<div class="bg-white shadow rounded-lg p-8 text-center max-w-2xl mx-auto mt-10">
-    <h1 class="text-4xl font-extrabold text-indigo-700 mb-4">Hello World!</h1>
-    <p class="text-lg text-gray-600 mb-6">Welcome to your new static website for songs. It uses Eleventy to separate data from presentation, and Tailwind CSS for styling.</p>
-    
-    <div class="inline-block bg-indigo-50 border border-indigo-200 rounded p-4 text-left shadow-sm">
-        <h2 class="text-xl font-semibold text-indigo-800 mb-2">Next Steps</h2>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Create your song data in JSON format within <code class="bg-gray-200 px-1 rounded text-sm text-pink-600">src/_data</code>.</li>
-            <li>Create templates in <code class="bg-gray-200 px-1 rounded text-sm text-pink-600">src/_includes</code> to display the structure of your songs.</li>
-            <li>Generate a collection of songs and render them consistently!</li>
-        </ul>
+<div class="max-w-4xl mx-auto mt-10">
+    <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">Welcome. Pick an era.</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <a href="/era/uneven-and-odd/" class="block group">
+            <div class="bg-gray-200 aspect-square rounded-lg flex items-center justify-center text-gray-800 text-2xl font-semibold shadow-md transition-transform transform group-hover:scale-105 overflow-hidden">
+                <div class="p-6 text-center">Uneven and odd</div>
+            </div>
+            <p class="mt-4 text-gray-600 text-center">My newer songs</p>
+        </a>
+        
+        <a href="/era/a-fraction-of-me-is-irrational/" class="block group">
+            <div class="bg-gray-200 aspect-square rounded-lg flex items-center justify-center text-gray-800 text-2xl font-semibold shadow-md transition-transform transform group-hover:scale-105 overflow-hidden">
+                <div class="p-6 text-center">A fraction of me is irrational</div>
+            </div>
+            <p class="mt-4 text-gray-600 text-center">Some of my earlier stuff</p>
+        </a>
+        
     </div>
 </div>
 
@@ -38,8 +45,8 @@
 
     <!-- Common Footer -->
     <footer class="bg-gray-800 text-gray-300 py-6 mt-auto">
-        <div class="max-w-4xl mx-auto px-4 text-center text-sm">
-            <p>&copy; 2026 Song Vault. Built with Eleventy and Tailwind CSS.</p>
+        <div class="max-w-4xl mx-auto px-4 text-left text-sm">
+            <p>&copy; 2026 Anna Kosieradzka.</p>
         </div>
     </footer>
 </body>

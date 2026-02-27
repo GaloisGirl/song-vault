@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title | default("Song Vault") }}</title>
+    <title>Uneven and odd - Anna&#39;s Song Vault</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
@@ -19,7 +19,16 @@
 
     <!-- Main Content -->
     <main class="flex-grow max-w-4xl mx-auto px-4 py-8 w-full">
-        {{ content | safe }}
+        
+<div class="bg-white shadow rounded-lg p-8 max-w-2xl mx-auto mt-10">
+    <h1 class="text-3xl font-extrabold text-gray-800 mb-4">Uneven and odd</h1>
+    <p class="text-lg text-gray-600">My newer songs</p>
+    
+    <div class="mt-8">
+        <a href="/" class="text-indigo-600 hover:text-indigo-800 transition-colors">&larr; Back to Eras</a>
+    </div>
+</div>
+
     </main>
 
     <!-- Common Footer -->
