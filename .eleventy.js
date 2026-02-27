@@ -1,6 +1,7 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Pass through the compiled Tailwind CSS
   eleventyConfig.addPassthroughCopy("./src/styles/style.css");
+  eleventyConfig.addPassthroughCopy("./src/img");
 
   return {
     dir: {
